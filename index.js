@@ -15,9 +15,9 @@ app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname,'/views-hbs'));
 
 app.get('/', (req, res) => {
-    //beginning of---for handlebars sample
+    //beginning of---for handlebars sample data
     const data = redditData['chickens'];
-    //end of----for handlebars sample
+    //end of----for handlebars sample data
     res.render('home', {
         title: 'HOME PAGE',
         ...data
